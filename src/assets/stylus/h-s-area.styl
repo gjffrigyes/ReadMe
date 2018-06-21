@@ -1,0 +1,58 @@
+@import "../../common/stylus/variable"
+@import "../../common/stylus/mixin"
+.hotbox
+  position :relative
+  .hotadv
+    float :left
+    display :inline
+    width :640px
+    height :360px
+    left:280px
+    position :absolute
+    overflow:hidden
+.hot
+  /*display:-moz-box
+  display:-webkit-box
+  display:box;*/
+  li
+    border:1px solid $color-border
+    width:245px
+    height:360px
+    p
+      display:block
+      font-size :$font-size-large-x
+      color :$color-background-menu
+      text-align :center
+      line-height 30px;
+      img
+        width :236px
+        height :189px
+      span
+        text-decoration: line-through
+        color :#767676
+        font-size :$font-size-small
+    p.but
+      width :180px
+      height :33px
+      line-height :33px
+      text-align :center
+      margin :0 auto
+      background :$color-background-menu
+      color :$font-color-ffffff
+      font-size :$font-size-small
+    strong
+      display:block
+      text-align :center
+      border-bottom :1px dotted #cccccc
+      font-size :$font-size-large
+      padding : 0 5px
+      line-height :40px
+    /*-moz-box-flex:1.0
+    -webkit-box-flex:1.0
+    box-flex:1.0;*/
+  li:nth-child(odd)
+    float :left
+    display :inline
+  li:nth-child(even)
+    float :right
+    display :inline

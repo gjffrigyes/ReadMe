@@ -1,0 +1,2 @@
+cross-env NODE_ENV=production pm2 start server.js -n donews-web-g --log-date-format='YYYY-MM-DD=HH:mm:Z' -o /data/logs/donews-web-g.log -e /data/logs/donews-web-g.err
+NODE_ENV=production pm2 start server.js -n donews-web-g --log-date-format='YYYY-MM-DD=HH:mm:ss=Z' -o /data/www/gwww/www/server_test/logs/donews-web-g.log -e /data/www/gwww/www/server_test/logs/donews-web-g.err

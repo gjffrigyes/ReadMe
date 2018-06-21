@@ -1,0 +1,145 @@
+@import "../../common/stylus/variable"
+@import "../../common/stylus/mixin"
+.homebox
+  .banner
+    background: $color-banner-background
+    height: 500px
+    width:100%
+    margin-bottom:50px
+  .adv
+    height:430px
+.refrence
+  width:1200px
+  margin: 0 auto 50px
+  display:-moz-box
+  display:-webkit-box
+  display:box
+  li
+    width:352px
+    height:148px
+    -moz-box-flex:1.0
+    -webkit-box-flex:1.0
+    box-flex:1.0
+    border:1px solid $color-border
+    margin:0 5px
+    padding: 40px 0 0 40px
+    position :relative
+    strong
+      font-size:$font-size-medium-x
+      line-height :$font-size-large-x
+      margin-bottom :10px
+    span
+      float:left
+      display:inline
+      width: 152px
+      height:148px
+      position:absolute
+      right: 23px
+      top:23px
+      overflow :hidden
+      img
+        width :152px
+    p
+      font-size :$font-size-medium
+      line-height :$font-size-large-x
+      margin-bottom :10px
+      color :$font-color-font01
+    p.but
+      width :99px
+      height :35px
+      background:$color-background-menu
+      text-align:center
+      line-height 35px
+      color:$font-color-ffffff
+
+.highrecommend
+  .highrecomPic
+    float:left
+    display:inline
+    width:264px
+    height:465px
+    margin-right:9px
+    overflow:hidden
+  .highrecomProduct
+    width :620px
+    float:left
+    li
+      float:left
+      width:301px
+      height:224px
+      border:1px solid $color-border
+      margin:0 0 14px 6px
+      position :relative
+      overflow: hidden
+      p
+        strong
+          font-size :$font-size-medium
+          display :block
+          margin-bottom :17px
+        span
+          display :block
+          width :86px
+          height :33px
+          line-height :33px
+          text-align :center
+          margin :0 auto
+          background :$color-background-menu
+          color :$font-color-ffffff
+          font-size :$font-size-small
+      p:nth-child(odd)
+        float :right
+        width : 154px
+        height :159px
+        overflow :hidden
+        margin :30px 10px 0 0
+      p:nth-child(even)
+        float :left
+        position :absolute
+        left:10px
+        top:80px
+.advRecommend
+  dl
+    display:block
+    dt
+      float:left
+      width:782px
+      height:434px
+    dd
+      float:left
+      display:inline
+      background:#333333
+      padding:55px 0 0 55px
+      width:351px
+      height:379px
+      p
+        font-size:36px
+        color:#fff
+        display:block
+        text-align:left
+        margin-bottom:50px
+        span
+          font-size:16px
+        span.num
+          font-size:50px
+          color:#ff6537
+        img
+          float:left
+          display:inline
+          margin-right:36px
+      p.btn
+        width :180px
+        height :33px
+        line-height :33px
+        text-align :center
+        background :#ff0000
+        color :#ffffff
+        font-size :14px
+.news
+  h4
+    font-size:16px
+    padding:10px 20px
+  ul
+    li
+      color :#999999
+      font-size :12px
+

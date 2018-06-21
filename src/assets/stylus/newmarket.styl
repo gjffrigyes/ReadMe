@@ -1,0 +1,54 @@
+@import "../../common/stylus/variable"
+@import "../../common/stylus/mixin"
+.homebox
+  .banner
+    background: $color-banner-background
+    height: 500px
+    width:100%
+    margin-bottom:50px
+  .adv
+    height:430px
+.newMarketlist
+  li
+    width:284px
+    height:320px
+    border:1px solid $color-border
+    float: left
+    display: inline
+    margin-right:18px
+    overflow :hidden
+    p
+      display:block
+      font-size :$font-size-large-x
+      color :$color-background-menu
+      text-align :center
+      line-height:30px;
+      img
+        width :236px
+        height :189px
+      span
+        text-decoration: line-through
+        color :#767676
+        font-size :$font-size-small
+    p.but
+      width :180px
+      height :33px
+      line-height :33px
+      text-align :center
+      margin :0 auto
+      background :$color-background-menu
+      color :$font-color-ffffff
+      font-size :$font-size-small
+    strong
+      display:block
+      text-align :center
+      border-bottom :1px dotted #cccccc
+      font-size :$font-size-large
+      margin : 0 5px
+      line-height :40px
+  li:last-child
+    margin-right:0px
+    float:left
+    display:inline
+
+

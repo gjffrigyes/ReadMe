@@ -1,0 +1,507 @@
+@import "../../common/stylus/reset"
+@import "../../common/stylus/base"
+@import "../../common/stylus/variable"
+@import "../../common/stylus/mixin"
+.homebox
+  .banner
+    background: $color-banner-background
+    height: 500px
+    width:100%
+    margin-bottom:50px
+  .adv
+    height:430px
+.footer
+  .footerPinPai
+    height:108px
+    background :url("../../common/image/bgline.jpg")no-repeat center top
+    background-color:$color-background-menu
+  .footerSever
+    height:254px
+    background:$color-footer-bg
+    ul
+      width:1300px
+      margin: 0 auto
+      li
+        float:left
+        display:inline
+        width:340px
+        text-align:center
+        color:#666666
+        strong
+          display:block
+          font-size:18px
+          margin:30px 0
+        p
+          font-size:14px
+          line-height:30px
+      li:nth-child(1)
+        width:300px
+      li:nth-child(4)
+        width:280px
+  .footerRcord
+    height:78px
+    border-top:1px solid #272727
+    background:#171717
+    text-align:center
+    line-height :78px
+    color:#585858
+
+.headerBox
+  .header
+    width:1300px
+    margin: 0 auto
+    display:block
+    height:110px
+    .logo
+      float: left
+      display:inline
+      width:400px
+      color: $font-color-header
+      position relative
+      h1
+        float:left
+        display:inline
+        width:100px
+        height:100px
+        margin:0px
+        background: url("../../../public/logo.png") no-repeat 0px center
+      p
+        float:left
+        display:inline
+        font-size:$font-size-large
+        margin-top:35px
+        padding-left:20px
+        border-left:1px solid #c9c9c9
+      span
+        float:left
+        display:inline
+        font-size: 12px
+        font-weight: normal
+        position: absolute
+        left: 120px
+        top:70px
+        font-style:italic
+  .search
+    float: left
+    display: inline
+    margin-left: 100px
+    margin-top: 20px
+    color:#666666
+    p
+      margin:0 auto 10px
+      position:relative
+      span
+        float:left
+        display:inline
+        position:absolute
+        right:10px
+        top:7px
+        width:17px
+        height:16px
+        background: url("../../common/image/go.png") no-repeat 0px center
+      input
+        width:398px
+        height:28px
+        border:1px solid #ccc
+        border-radius: 30px 30px
+      a
+        display:inline-block
+        margin-right:10px
+  .headerAdv
+    float:right
+    display:inline
+  .navbox
+    background:$color-background-nav
+    height:50px
+    font-size:14px
+    line-height:50px
+    .nav
+      width:1300px
+      margin:0 auto
+      .allpro
+        float:left
+        display:inline
+        width:230px;
+        height:50px;
+        background:$color-background-menu
+        color:$font-color-ffffff
+        text-align:center
+      a
+        float:left
+        display:inline
+        color:$font-color-ffffff
+        margin-left:48px
+        padding: 0 20px
+        cursor:pointer
+        &.router-link-active
+          color: $color-theme
+          background:none
+        &.router-link-exact-active
+          color: $color-theme
+          background:$color-background-menu
+      a:hover
+        background:$color-background-menu
+      a.current
+        color: $color-theme
+        background:$color-background-menu
+
+.title
+  border-bottom: 1px solid $color-border
+  margin-bottom:19px
+  h3
+    float:left
+    display:inline
+    font-size:$font-size-26
+    color:$font-color-titleH3
+    margin-bottom:6px
+    label
+      font-size: $font-size-medium
+      color: $font-color-title
+  p
+    float:right
+    display:inline
+    margin-bottom:-4px
+    a
+      float: left
+      display: inline
+      color: $font-color-title
+      margin: 0 6px
+.shop
+  display:block
+  height:50px
+  margin :5px 15px
+  dt
+    float:left
+    display:inline
+    height:50px
+    width:50px
+    overflow:hidden
+    border:1px solid #eaeaea
+    img
+      width:50px
+  dd
+    float:left
+    display:inline
+    width:186px
+    height:50px
+    margin-left :10px
+    position:relative
+    h3
+      font-size :12px
+      color :#7e8c8d
+.product
+  display:block
+  width:1200px
+  margin:0 auto 50px
+  padding-bottom:50px
+.productLeft
+  border:none
+  float:left
+  width:258px
+  h3
+    height:45px;
+    border-bottom:1px solid #ccc
+    line-height:45px
+    padding-left:10px
+    font-size:16px
+    color:#ff6637
+  div.coupon
+    margin-bottom:20px
+    border:1px solid #ccc
+    ul
+      padding:10px 0
+      li
+        background:url("../../../public/juan.jpg")no-repeat center center
+        height:118px
+        margin:10px 0
+        position:relative
+        color:#fff
+        div.couponSavePrice
+          left: -5px
+          text-align: center
+          font-family: Microsoft YaHei
+          letter-spacing: -3px
+          width: 146px
+          height: 75px
+          position: absolute
+          span.priceSign
+            font-size: 24px
+            position: relative
+            top: -27px
+            left: 3px
+            display: inline-block
+          span.couponPrice
+            font-size:60px
+        div.couponUseCondition
+          width: 68px
+          font-size: 15px
+          letter-spacing: -1px
+          line-height: 18px
+          position: absolute
+          top: 10px
+          right: 12px
+        div.receiveCoupon
+          cursor: pointer
+          z-index: 1
+          position: absolute
+          bottom: 18px
+          left:24px
+          width: 210px
+          text-align: center
+          background-color: #fff
+          margin: 0 auto
+          font-size: 14px
+          border-radius: 2px
+          height: 24px
+          line-height: 24px
+          color:#858585
+        div.validTime
+          font-weight: normal
+          font-size: 11px
+          line-height: 18px
+          position: absolute
+          right: 24px
+          bottom: 0
+          opacity: .8
+  div.recommandProduct
+    margin-bottom:20px
+    padding-bottom:15px
+    border:1px solid #ccc
+    dl
+      margin:15px 0 0 15px
+      display:block
+      height:100px
+      dt
+        float:left
+        display:inline
+        width:101px
+        height:102px
+        overflow:hidden
+        margin-right:10px
+        padding:1px 1px
+        border:1px solid #ccc
+        img
+          width:100px
+          height:100px
+      dd
+        float:left
+        display:inline
+        h4
+          font-size:14px
+          color:#666
+          height:28px
+          line-height:28px
+          margin-bottom:15px
+        p.oldprice
+          text-decoration: line-through
+          font-family: Arial
+          color:#888
+          font-size:16px
+          margin-bottom:10px
+        p.newprice
+          color:#ff6637
+          font-size:16px
+          font-weight:bold
+.productRight
+  float:right
+  width:920px
+  dl
+    margin-bottom:20px
+    dt
+      float:left
+      border:1px solid #eaeaea
+      display:inline
+      width:450px
+      height:380px
+      overflow:hidden
+      img
+        float :left
+        display:inline
+        width:450px
+        height:380px
+        margin :0 0 0 1px
+    dd
+      float:left
+      margin-left:20px
+      p
+        height:54px
+        line-height:54px
+        color:#666
+        label.font40
+          font-size:40px
+          color:#ff6537
+          margin-right:10px
+        label.tl-T
+          text-decoration: line-through;
+        span
+          float:left
+          display:inline
+          width:160px
+          height:42px
+          font-size:14px
+          text-align:center
+          line-height:42px
+          border:1px solid #ff6537
+          border-radius:5px 5px
+          margin-right:20px
+          color:#ff6637
+        span.sell
+          background:#ff6537
+          color:#ffffff
+      h3
+        font-size:20px
+        color:#585858
+        margin-bottom:20px
+.qiehuan
+  height:50px
+  border:1px solid #eaeaea
+  display:block
+  margin-bottom:20px
+  li
+    display:block
+    float:left
+    width:160px
+    line-height:50px
+    text-align:center
+    border-left:1px solid #eaeaea
+    border-right:1px solid #eaeaea
+.msg
+  background:#eeeeee
+  padding:30px 120px
+  ul
+    li
+      display:block
+      padding:20px 0
+      position:relative
+      input.w150
+        width:150px
+        height:50px
+        border:1px solid #ddd
+      input.w720
+        width:720px
+        height:120px
+        border:1px solid #ddd
+      span
+        width:100px
+        float:left
+        display:inline
+        position:absolute
+        left:-110px
+        text-align:right
+  p
+    width:158px
+    height:42px
+    font-size:14px
+    color:#fff
+    line-height:42px
+    text-align:center
+    background:#ff6537
+    margin:0 auto
+    border-radius:5px 5px
+.addnum
+  width:54px
+  height:15px
+  position: absolute
+  bottom:4px
+  right:0px
+  &.right30
+    right:30px
+
+.addnum span
+  height:15px
+  width:15px
+  text-align:center
+  border:1px solid #bababa;
+  display:-moz-box
+  display:-webkit-box
+  display:box
+  line-height: 30px
+  float: left
+  font-size: 16px
+.addnum span b
+  display:flex
+  justify-content:center
+  align-items: center
+  font-weight: normal
+  text-align: center
+  color: #5f5f5f
+.priceRed
+  color :#ff0000
+  font-size :14px
+  margin-top:20px
+.shopcarbox
+  height:100%
+  position:fixed
+  right:0px
+  top:0px
+  float:left
+  transition: width 1s, height 1s, transform 1s
+.shopcarfix
+  float:left
+  display:inline
+  height:100%
+  left:0px
+  top:0px
+  width:35px
+  background:#000
+  z-index:100
+  color:#fff
+  font-size:14px
+  text-align:center
+  p
+    display:block
+    padding:10px 0
+  p.num
+    border-radius:50% 50%
+    background:#ff0000
+    width:20px
+    height:20px
+    padding:0 0
+    margin:0 auto
+    line-height:20px
+    text-align:center
+.shopCarRight
+  width:279px
+  float:left
+  display:inline
+  background:#fff
+  height:100%
+  position:absolute
+  left:35px
+  top:0px
+  h4
+    height:40px
+    background:#333333
+    text-align:center
+    font-size:16px
+    color:#fff
+    line-height:40px
+  .shopCarPrice
+    height:100px
+    width:100%
+    background:#fff
+    position:absolute
+    bottom:0px
+    left:0px
+    p
+      height:46px
+      line-height:46px
+      font-size:16px
+      padding:0 20px
+      span
+        float:left
+        display:inline
+      span.right
+        float:right
+        display:inline
+    p.button
+      width:199px
+      background:#e43a3d
+      font-size:16px
+      color:#fff
+      margin:0 auto
+      text-align:center
+      cursor:pointer
+.shopCarList
+  width:100%
+  height:100%

@@ -1,0 +1,48 @@
+@import "../../common/stylus/variable"
+@import "../../common/stylus/mixin"
+.connectUsBox
+  .connectUs
+    margin-bottom:60px
+    h3
+      color:$color-connect
+      font-size:30px
+      margin-bottom:20px
+      text-align:center
+    p
+      font-size:14px
+      text-align:center
+      line-height:30px
+      color:#858585
+  .connectStyle
+    width:1200px
+    margin:0 auto 60px
+    display:-moz-box
+    display:-webkit-box
+    display:box
+    li
+      text-align:center
+      height:40px
+      padding-top:90px
+      -moz-box-flex:1.0
+      -webkit-box-flex:1.0
+      box-flex:1.0
+      p
+        position :relative
+        display :block
+        padding-left :80px
+        span
+          float:left
+          display :inline
+          position :absolute
+          left: 80px
+          top:0
+    li:nth-child(1)
+      background:url(../../common/image/phone_01.png)no-repeat center top
+    li:nth-child(2)
+      background:url(../../common/image/phone_02.png)no-repeat center top
+    li:nth-child(3)
+      background:url(../../common/image/phone_03.png)no-repeat center top
+  .connectmap
+    width:1200px
+    height:500px
+    margin:0 auto 50px
